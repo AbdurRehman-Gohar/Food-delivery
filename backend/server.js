@@ -28,8 +28,8 @@ app.get("/",(req,res)=>{
 })
 
 
-app.listen(port,()=>{
-    console.log(`server started on http:localhost:${port}`)
-})
+// app.listen(port,()=>{
+//     console.log(`server started on http:localhost:${port}`)
+// })
 
 // mongodb+srv://abdurrehman-tomato:<db_password>@cluster0.vqbkx.mongodb.net/?
