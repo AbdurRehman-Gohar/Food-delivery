@@ -6,7 +6,7 @@ import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoute.js";
 import "dotenv/config";
 import cartRoute from "./routes/cartRoute.js";
-import path from "path";
+// import path from "path";
 
 // App config
 const app = express();
@@ -27,12 +27,12 @@ app.use("/api/cart", cartRoute);
 
 // Serve static frontend files
 // Adjust the path to point to the frontend/dist folder correctly
-app.use(express.static(path.join(__dirname, "..", "frontend", "dist")));
+// app.use(express.static(path.join(__dirname, "..", "frontend", "dist")));
 
-// Catch-all route for SPA (Single Page Application) routing
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "frontend", "dist", "index.html"));
-});
+// // Catch-all route for SPA (Single Page Application) routing
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "..", "frontend", "dist", "index.html"));
+// });
 
 // Default root route
 app.get("/", (req, res) => {
